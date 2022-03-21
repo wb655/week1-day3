@@ -113,13 +113,14 @@ The <label> element is useful for screen-reader users, because the screen-reader
 
 The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
 
-The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+The for attribute of the <label> tag should be equal to the name attribute of the <input> element to bind them together.
+Input doesnt need closing tag
 
 <form>
   <label for="fname">First name:</label><br>
-  <input type="text" name="fname"><br>
+  <input type="text" name="fname" id="fname"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" name="lname">
+  <input type="text" name="lname" id="lname">
 </form>
 
 #### The Submit Button
